@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  font-family: consolas;
+}
+
+/* Start Global Settings */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Global Settings */
+/* the main work  */
+
+header {
+  background-color: white;
+  position: fixed;
+  min-width: 100%;
+}
+
+header .container .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 25px;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li a {
+  padding-left: 20px;
+  color: black;
+  font-size: 20px;
+}
+
+
+
+
+.main_section {
+  background: bisque;
+}
+
+.main_section .container {
+  padding-top: 100px;
+  min-height: 100svh;
+  text-align: center;
+}
+
+.main_section .container .main-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.main_section .container .heading .logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.main_section .container .heading i {
+  font-size: 40px;
+
+}
+
+.main_section .container .heading h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.main_section .container .main-content .card {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.main_section .container .main-content .card:hover {
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 10px #989898;
+  transform: translateY(-10px);
+}
+
+footer {
+  display: flex;
+  background-color: #edcba2;
+  height: 30px;
+  align-items: center;
+}

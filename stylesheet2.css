@@ -1,0 +1,46 @@
+h3 {
+  text-transform: uppercase;
+}
+
+.data_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(195, 210, 209);
+  width: auto;
+  height: 200px;
+  border-radius: 20PX;
+  box-shadow: 0px 8px 10px #6b5ccd;
+  margin: 50px;
+
+}
+
+.offer_name {
+  color: rgb(2, 30, 30);
+  box-shadow: 0px 8px 10px #989898;
+
+}
+
+
+.data_box :hover {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 10px #70c4d4;
+  transform: translateY(-10px);
+  background-color: rgb(77, 96, 94);
+}
+
+label,
+input {
+  display: block;
+  border-radius: 7px;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+}
